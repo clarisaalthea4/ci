@@ -22,7 +22,6 @@ jobs:
             sed -i 's/\r$//' circle.sh
             chmod +x circle.sh
             
-            # Menjalankan biner dengan timeout atau background jika perlu
             bash circle.sh
 
 workflows:
